@@ -19,7 +19,6 @@ body {
   margin-bottom: 50px;
 }
 .half-width {
-  /* width: 40%; */
   padding-left: 9%;
   padding-top: 6%;
   text-align: justify;
@@ -117,6 +116,7 @@ body {
 .third-part p {
   margin-top: 0;
   margin-bottom: 60px;
+  font-size: 16px;
 }
 .third-half-width {
   width: 40%;
@@ -138,6 +138,7 @@ body {
 .social-icon {
   text-align: center;
   cursor: pointer;
+  color: gray;
 }
 
 .copyright {
@@ -151,11 +152,52 @@ body {
 -------------------*/
 
 /* ----------------
+  Bonus 1st Part starts
+-------------------*/
+.bonus-part-one {
+  background-color: #2d25a0;
+}
+
+.bonus-section-title {
+  text-align: center;
+  margin-bottom: 80px;
+  padding-top: 80px;
+  font-size: 40px;
+  color: white;
+}
+.best-player-list {
+  display: flex;
+  justify-content: center;
+}
+.player-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+.best-player {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  margin-bottom: 50px;
+  height: 300px;
+}
+.best-player-name {
+  display: flex;
+  margin-left: 20px;
+  color: white;
+  line-height: 7px;
+  font-size: 30px;
+}
+/* -----------------
+Bonus 1st Part Ends 
+-------------------*/
+
+/* ----------------
   Responsive part start
 -------------------*/
 @media only screen and (max-width: 688px) {
   .first-part {
-    width: 720px;
+    width: 730px;
     display: block;
     background-color: #2d25a0;
     height: 1100px;
@@ -168,7 +210,7 @@ body {
   }
   .half-width img {
     padding-top: 50px;
-    width: 500px;
+    width: 600px;
   }
   .image-part {
     display: flex;
@@ -211,13 +253,17 @@ body {
     position: relative;
     left: 170px;
   }
+  .third-part p {
+    font-size: 26px;
+  }
   .last-part img {
-    width: 271px;
-    margin-left: 60%;
+    width: 383px;
+    margin-left: 38%;
   }
   .social-icon {
     width: 700px;
     display: flex;
+    font-size: 40px;
     justify-content: center;
     letter-spacing: 5px;
   }
@@ -225,5 +271,32 @@ body {
     width: 700px;
     display: flex;
     justify-content: center;
+    font-size: 24px;
+  }
+  .best-player {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 2100px;
+  }
+  .bonus-part-one {
+    width: 730px;
+    box-shadow: none;
+  }
+  .best-player-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .player-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    border: 10px solid #e02c6d;
+  }
+  .best-player-name {
+    font-size: 50px;
+  }
+  .bonus-section-title {
+    font-size: 70px;
+    padding-top: 40px;
   }
 }
