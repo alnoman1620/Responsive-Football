@@ -19,7 +19,7 @@ body {
   margin-bottom: 50px;
 }
 .half-width {
-  padding-left: 9%;
+  padding-left: 10%;
   padding-top: 6%;
   text-align: justify;
 }
@@ -97,6 +97,7 @@ body {
 }
 .player-info p {
   color: grey;
+  font-size: 16px;
 }
 /* ----------------
   Second Part Ends
@@ -107,10 +108,10 @@ body {
 -------------------*/
 .third-section {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 200px;
 }
 .third-part h1 {
-  font-size: 64px;
+  font-size: 50px;
   margin-bottom: 0;
 }
 .third-part p {
@@ -118,7 +119,7 @@ body {
   margin-bottom: 60px;
   font-size: 16px;
 }
-.third-half-width {
+.third-part {
   width: 40%;
   padding-left: 10%;
   padding-top: 6%;
@@ -129,7 +130,7 @@ body {
 -------------------*/
 
 /* ----------------
-  Last Part Starts
+  Footer Part Starts
 -------------------*/
 .last-part img {
   width: 483px;
@@ -146,9 +147,10 @@ body {
 }
 .last-part {
   margin-top: 100px;
+  margin-bottom: 200px;
 }
 /* ----------------
-  Last Part ends
+  Footer Part ends
 -------------------*/
 
 /* ----------------
@@ -178,7 +180,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 20px;
-  margin-bottom: 50px;
+
   height: 300px;
 }
 .best-player-name {
@@ -192,9 +194,45 @@ body {
 Bonus 1st Part Ends 
 -------------------*/
 
-/* ----------------
-  Responsive part start
--------------------*/
+/* -----------------
+Bonus part 2 starts 
+--------------------*/
+.bonus-part-two {
+  background-color: #e02c6d;
+  height: 400px;
+  align-items: center;
+  margin-top: 100px;
+}
+.final-match {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.team-img {
+  height: 100px;
+}
+.argentina {
+  text-align: center;
+  line-height: 10px;
+}
+
+.brazil {
+  text-align: center;
+  line-height: 10px;
+  margin-left: 30px;
+}
+.team-name {
+  color: white;
+}
+.final-result-text {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+}
+/* -------------------------------
+  Responsive part for mobile start
+----------------------------------*/
 @media only screen and (max-width: 688px) {
   .first-part {
     width: 730px;
@@ -228,19 +266,22 @@ Bonus 1st Part Ends
   .players {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
   }
   .player-card {
     box-shadow: 5px 5px 20px rgb(219, 218, 218);
     padding: 20px;
-    width: 450px;
+    width: 470px;
+  }
+  .player-card p {
+    font-size: 16px;
   }
   .player-card img {
     width: 450px;
   }
   .players {
     position: relative;
-    left: 115px;
+    left: 107px;
   }
   .third-section {
     display: block;
@@ -249,15 +290,11 @@ Bonus 1st Part Ends
     width: 470px;
     margin-left: 80px;
   }
-  .match {
-    position: relative;
-    left: 170px;
-  }
   .third-part p {
     font-size: 26px;
   }
   .last-part img {
-    width: 383px;
+    width: 483px;
     margin-left: 38%;
   }
   .social-icon {
@@ -267,6 +304,7 @@ Bonus 1st Part Ends
     justify-content: center;
     letter-spacing: 5px;
   }
+
   .copyright {
     width: 700px;
     display: flex;
@@ -276,7 +314,8 @@ Bonus 1st Part Ends
   .best-player {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    height: 2100px;
+    height: 2300px;
+    grid-row-gap: 50px;
   }
   .bonus-part-one {
     width: 730px;
@@ -286,6 +325,7 @@ Bonus 1st Part Ends
     flex-direction: column;
     align-items: center;
   }
+
   .player-image {
     width: 200px;
     height: 200px;
@@ -299,4 +339,83 @@ Bonus 1st Part Ends
     font-size: 70px;
     padding-top: 40px;
   }
+  .bonus-part-two {
+    width: 730px;
+  }
+  .half-width {
+    margin-left: 30px;
+  }
 }
+
+/* -------------------------------
+  Responsive part for mobile end
+----------------------------------*/
+
+/* -------------------------------
+  Responsive part for Tab start
+----------------------------------*/
+@media only screen and (min-width: 688px) and (max-width: 1024px) {
+  .first-part {
+    width: 100%;
+
+    background-color: #2d25a0;
+    height: 700px;
+    background-size: auto;
+    margin-bottom: 15px;
+  }
+  .text-part {
+    width: 400px;
+  }
+  .half-width img {
+    padding-top: 50px;
+    width: 550px;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+  }
+  .third-section {
+    width: 90%;
+  }
+  .third-part {
+    width: 100%;
+  }
+  .third-part h1 {
+    font-size: 30px;
+  }
+  .third-part p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .third-section img {
+    width: 400px;
+  }
+  .best-player {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 1000px;
+    grid-row-gap: 50px;
+  }
+
+  .player-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 120px;
+    border: 10px solid #e02c6d;
+  }
+  .best-player-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .best-player-name {
+    font-size: 40px;
+  }
+  .bonus-section-title {
+    font-size: 60px;
+    padding-top: 40px;
+  }
+}
+/* -------------------------------
+  Responsive part for Tab ends
+----------------------------------*/
