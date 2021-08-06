@@ -130,7 +130,7 @@ body {
 -------------------*/
 
 /* ----------------
-  Footer Part Starts
+  Last Part Starts
 -------------------*/
 .last-part img {
   width: 483px;
@@ -150,7 +150,7 @@ body {
   margin-bottom: 200px;
 }
 /* ----------------
-  Footer Part ends
+  Last Part ends
 -------------------*/
 
 /* ----------------
@@ -368,7 +368,7 @@ Bonus part 2 starts
   }
   .half-width img {
     padding-top: 50px;
-    width: 550px;
+    width: 450px;
   }
   .players {
     display: grid;
